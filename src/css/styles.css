@@ -1,25 +1,132 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+.gallery {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 24px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+.gallery-image {
+  width: 100%;
+}
+
+.picture-title {
+  color: white;
+}
+
+.simple-lightbox {
+  background: rgba(47, 46, 77, 0.8);
+}
+
+.sl-wrapper .sl-navigation button {
+  color: #fff;
+}
+
+.feedback-form {
+  width: 408px;
+  height: 296px;
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.feedback-form label {
+  color: #2e2f42;
+  font-family: Montserrat;
   font-size: 16px;
-  line-height: 24px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 360px;
+}
+.feedback-form > button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+}
+
+.feedback-form > button:hover {
+  background: #6c8cff;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+}
+
+.feedback-form input:hover {
+  border-color: #000;
+}
+
+body > a,
+button {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+
+  display: flex;
+  padding: 5px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-decoration: none;
 }
