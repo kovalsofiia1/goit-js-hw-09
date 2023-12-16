@@ -22,6 +22,8 @@ form.addEventListener('submit', (event) => {
     console.log(toStorage);
     localStorage.removeItem(ST_FORM_KEY);
     form.reset();
+    toStorage.email = '';
+    toStorage.message = '';
 
 })
 
