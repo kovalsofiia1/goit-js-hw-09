@@ -1,6 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-
+import url from '../img/icons.svg';
 const images = [
   {
     preview:
@@ -100,17 +100,17 @@ fillGallery();
 
     closeText: ` <button>
           <svg width="32" height="32">
-            <use href="/../img/icons.svg#icon-close"></use>
+            <use href="${url}#icon-close"></use>
           </svg>
         </button>`,
     navText:
        [
     `<svg width='24' height='24'>
-      <use href="/../img/icons.svg#icon-prev"></use>
+      <use href="${url}#icon-prev"></use>
   </svg>`,
 
     `<svg width='24' height='24'>
-    <use href="/../img/icons.svg#icon-next"></use>
+    <use href="${url}#icon-next"></use>
   </svg>`,
   ],
 
