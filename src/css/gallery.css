@@ -1,0 +1,35 @@
+.gallery {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 24px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.picture-title {
+  color: white;
+}
+
+.simple-lightbox {
+  background: rgba(47, 46, 77, 0.8);
+}
+
+.sl-wrapper .sl-navigation button {
+  color: #fff;
+}
+
+body .sl-wrapper .sl-counter {
+  color: #fff;
+}

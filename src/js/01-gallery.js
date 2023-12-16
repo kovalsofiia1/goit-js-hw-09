@@ -98,18 +98,19 @@ fillGallery();
     captionsData: 'alt',
     captionDelay: 250,
 
-    closeText: ` <button>
-          <svg width="32" height="32">
+    closeText:
+     `
+      <svg width='32' height='32'>
             <use href="${url}#icon-close"></use>
-          </svg>
-        </button>`,
+      </svg>
+        `,
     navText:
        [
     `<svg width='24' height='24'>
       <use href="${url}#icon-prev"></use>
   </svg>`,
 
-    `<svg width='24' height='24'>
+  `<svg width='24' height='24'>
     <use href="${url}#icon-next"></use>
   </svg>`,
   ],
