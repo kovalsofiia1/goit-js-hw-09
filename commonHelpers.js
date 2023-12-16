@@ -8,11 +8,11 @@
     </a>
     </li>`,t),""),r.innerHTML=a};l();new s(".gallery a",{overlay:!0,overlayOpacity:.7,captionsData:"alt",captionDelay:250,closeText:` <button>
           <svg width="32" height="32">
-            <use href="./img/icons.svg#icon-close"></use>
+            <use href="/../img/icons.svg#icon-close"></use>
           </svg>
         </button>`,navText:[`<svg width='24' height='24'>
-      <use href="./img/icons.svg#icon-prev"></use>
+      <use href="/../img/icons.svg#icon-prev"></use>
   </svg>`,`<svg width='24' height='24'>
-    <use href="./img/icons.svg#icon-next"></use>
+    <use href="/../img/icons.svg#icon-next"></use>
   </svg>`]});
 //# sourceMappingURL=commonHelpers.js.map
