@@ -3,14 +3,15 @@ const ST_FORM_KEY = "feedback-form-state"
 const form = document.querySelector('.feedback-form');
 const message = form.querySelector('textarea');
 const email = form.querySelector('input');
-const toStorage = {}
+const toStorage = {
+    
+}
 
 const initialData = JSON.parse(localStorage.getItem(ST_FORM_KEY));
 
 if (initialData) {
-    console.log(initialData);
-    toStorage.message = message.value = initialData.message;
-    toStorage.email = email.value = initialData.email;
+    toStorage.message = message.value = initialData.message ?? "";
+    toStorage.email = email.value = initialData.email ?? "";
 }
 
 form.addEventListener('submit', (event) => {
